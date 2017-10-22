@@ -345,7 +345,7 @@ namespace TPR3L
             }
         }
 
-        private double indxOfAgreed()
+        private double indxConsistency()
         {
             Control[] el;
             string tboxName = "IStextBox";
@@ -362,7 +362,7 @@ namespace TPR3L
             return input;
         }
 
-        private double indxOfAgreedP2()
+        private double indxConsistencyP2()
         {
             Control[] el;
             string tboxName = "ISP2textBox";
@@ -377,7 +377,7 @@ namespace TPR3L
             return inputP2;
         }/*Page2*/
 
-        private double indxOfAgreedP3()
+        private double indxConsistencyP3()
         {
             Control[] el;
             string tboxName = "ISP3textBox";
@@ -392,7 +392,7 @@ namespace TPR3L
             return inputP3;
         }/*Page3*/
 
-        private double indxOfAgreedP4()
+        private double indxConsistencyP4()
         {
             Control[] el;
             string tboxName = "ISP4textBox";
@@ -759,7 +759,7 @@ namespace TPR3L
 
         private void calcButton_Click(object sender, EventArgs e)
         {
-            indxOfAgreed();
+            indxConsistency();
             doIt();
         }
 
@@ -800,7 +800,7 @@ namespace TPR3L
 
         private void calcP2Button_Click(object sender, EventArgs e)
         {
-            indxOfAgreedP2();
+            indxConsistencyP2();
             doItP2();
         }
 
@@ -826,7 +826,7 @@ namespace TPR3L
 
         private void calcP3Button_Click(object sender, EventArgs e)
         {
-            indxOfAgreedP3();
+            indxConsistencyP3();
             doItP3();
         }
 
@@ -852,7 +852,7 @@ namespace TPR3L
 
         private void calcP4Button_Click(object sender, EventArgs e)
         {
-            indxOfAgreedP4();
+            indxConsistencyP4();
             doItP4();
         }
 
