@@ -29,8 +29,7 @@ namespace TPR3L
         public double [] massMidNormal = new double[3] { 0, 0, 0 };
         public double [] massMumnoz = new double[3] {0, 0, 0 };
         public double input = 0;
-// ////////////////////////////////////////////////////////////////////////
-
+/* ************************************************************************** */
         public double[,] massP2Main = new double[3, 3] {
             {1, 0.33, 2 },
             {3, 1, 0.5 },
@@ -47,7 +46,7 @@ namespace TPR3L
         public double[] massP2MidNormal = new double[3] { 0, 0, 0 };
         public double[] massP2Mumnoz = new double[3] { 0, 0, 0 };
         public double inputP2 = 0;
-  // /////////////////////////////////////////////////////////////////////////
+/* ************************************************************************** */
         public double[,] massP3Main = new double[3, 3] {
             {1, 5, 4 },
             {0.26, 3, 0.2 },
@@ -64,7 +63,7 @@ namespace TPR3L
         public double[] massP3MidNormal = new double[3] { 0, 0, 0 };
         public double[] massP3Mumnoz = new double[3] { 0, 0, 0 };
         public double inputP3 = 0;
- // /////////////////////////////////////////////////////////////////////////
+ /* ************************************************************************** */
         public double[,] massP4Main = new double[3, 3] {
             {0.5, 2, 1 },
             {2, 1, 1 },
@@ -81,7 +80,7 @@ namespace TPR3L
         public double[] massP4MidNormal = new double[3] { 0, 0, 0 };
         public double[] massP4Mumnoz = new double[3] { 0, 0, 0 };
         public double inputP4 = 0;
-        // /////////////////////////////////////////////////////////////////////////
+/* ************************************************************************** */
         public Form1()
         {
             InitializeComponent();
