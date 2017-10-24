@@ -13,9 +13,9 @@ namespace TPR3L
     public partial class Form1 : Form
     {
         public double[,] massMain = new double[3, 3] {
-            {1, 2, 0.25 },
+            {1, 3, 0.25 },
             {0.5, 1, 0.2 },
-            {4, 5, 1 },
+            {4, 0.55, 1 },
         };
 
         
@@ -49,9 +49,9 @@ namespace TPR3L
         public double inputP2 = 0;
   // /////////////////////////////////////////////////////////////////////////
         public double[,] massP3Main = new double[3, 3] {
-            {1, 3, 4 },
-            {0.33, 1, 0.2 },
-            {0.25, 5, 1 },
+            {1, 5, 4 },
+            {0.26, 3, 0.2 },
+            {0.2, 5, 1 },
         };
 
         public double[,] massP3NormMain = new double[3, 3] {
@@ -66,9 +66,9 @@ namespace TPR3L
         public double inputP3 = 0;
  // /////////////////////////////////////////////////////////////////////////
         public double[,] massP4Main = new double[3, 3] {
-            {1, 0.5, 1 },
-            {2, 1, 0.5 },
-            {1, 2, 1 },
+            {0.5, 2, 1 },
+            {2, 1, 1 },
+            {1, 1, 0.5 },
         };
 
         public double[,] massP4NormMain = new double[3, 3] {
@@ -719,7 +719,7 @@ namespace TPR3L
 
         private void sumButton_Click(object sender, EventArgs e)
         {
-            sumRow();
+           
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
@@ -729,36 +729,30 @@ namespace TPR3L
 
         private void normButton_Click(object sender, EventArgs e)
         {
-            normalize();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                /*    textArea.AppendText("arr sum\n");
-                    textArea.AppendText(massRowSum[i].ToString("0.00"));
-                    textArea.AppendText("Normal VECT\n");
-                    textArea.AppendText(massNormMain[i, j].ToString("0.00"));*/
-                }
-                
-            }
+            
         }
 
         private void medButton_Click(object sender, EventArgs e)
         {
-            countMedium();
+            
         }
 
         private void mumnozButton_Click(object sender, EventArgs e)
         {
-            mumnoz();
+            
         }
 
         private void calcButton_Click(object sender, EventArgs e)
         {
+            sumRow();
+            normalize();
+            countMedium();
+            mumnoz();
             indxConsistency();
             doIt();
         }
@@ -770,7 +764,7 @@ namespace TPR3L
 
         private void button6_Click(object sender, EventArgs e)
         {
-            sumP2Row();
+           
         }
 
         private void textBox15_TextChanged(object sender, EventArgs e)
@@ -785,73 +779,85 @@ namespace TPR3L
 
         private void button5_Click(object sender, EventArgs e)
         {
-            normalizeP2();
+           
         }
 
         private void medP2Button_Click(object sender, EventArgs e)
         {
-            countP2Medium();
+          
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            mumnozP2();
+           
         }
 
         private void calcP2Button_Click(object sender, EventArgs e)
         {
+            sumP2Row();
+            normalizeP2();
+            countP2Medium();
+            mumnozP2();
             indxConsistencyP2();
             doItP2();
         }
 
         private void sumP3Button_Click(object sender, EventArgs e)
         {
-            sumP3Row();
+            
         }
 
         private void normP3Button_Click(object sender, EventArgs e)
         {
-            normalizeP3();
+            
         }
 
         private void medP3Button_Click(object sender, EventArgs e)
         {
-            countP3Medium();
+            
         }
 
         private void mumnozP3Button_Click(object sender, EventArgs e)
         {
-            mumnozP3();
+            
         }
 
         private void calcP3Button_Click(object sender, EventArgs e)
         {
+            sumP3Row();
+            normalizeP3();
+            countP3Medium();
+            mumnozP3();
             indxConsistencyP3();
             doItP3();
         }
 
         private void sumP4Button_Click(object sender, EventArgs e)
         {
-            sumP4Row();
+            
         }
 
         private void normP4Button_Click(object sender, EventArgs e)
         {
-            normalizeP4();
+            
         }
 
         private void medP4Buttom_Click(object sender, EventArgs e)
         {
-            countP4Medium();
+            
         }
 
         private void mumnozP4Button_Click(object sender, EventArgs e)
         {
-            mumnozP4();
+           
         }
 
         private void calcP4Button_Click(object sender, EventArgs e)
         {
+            sumP4Row();
+            normalizeP4();
+            countP4Medium();
+            mumnozP4();
             indxConsistencyP4();
             doItP4();
         }
